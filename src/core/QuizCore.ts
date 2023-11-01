@@ -31,6 +31,7 @@ class QuizCore {
    */
   public getCurrentQuestion(): QuizQuestion | null {
     // Returns the current quiz question.
+    console.log(this.currentQuestionIndex)
     if (this.currentQuestionIndex >= 0 && this.currentQuestionIndex < this.questions.length) {
       return this.questions[this.currentQuestionIndex];
     }
